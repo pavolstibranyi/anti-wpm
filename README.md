@@ -17,7 +17,7 @@
 <p>
 
 ```c++
-int Value = 0;
+int Value = 0; // variable which we want to protect
 int pValue[ 1000 ] = { 0 };
 int Pos = 0;
 
