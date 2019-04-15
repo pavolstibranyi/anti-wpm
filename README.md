@@ -17,21 +17,21 @@
 <p>
 
 ```c++
-int Value = 0; // variable which we want to protect
-int pValue[ 1000 ] = { 0 };
-int Pos = 0;
+int VariableToProtect = 0;
+int pVar[ 1000 ] = { 0 };
+int Pos = 0; // 'pseudo-position' of the element (with same value as VariableToProtect) in pVar
 
 while( !GetAsyncKeyState( VK_SPACE ) )
 {
-	if( pValue[ Pos ] != Value )
-		printf( "detected!" );
+    if( pVar[ Pos ] != VariableToProtect )
+        printf( "detected!" );
 
-	++Value;
+    ++VariableToProtect;
 
-	Pos = rand( ) % 1000;
-	pValue[ Pos ] = Value;
+    Pos = rand( ) % 1000;
+    pVar[ Pos ] = VariableToProtect;
 
-	Sleep( 10 );
+    Sleep( 10 );
 }
 ```
 
