@@ -2,7 +2,7 @@
 
 ## What is it?
 
-* A class which protects code from external editing variables with programs such as Cheat Engine is
+* A class which protects variables from external manipulation
 
 ![example-gif](/example.gif)
 
