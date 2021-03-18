@@ -19,7 +19,7 @@
 ```c++
 int VariableToProtect = 0;
 int pVar[ 1000 ] = { 0 };
-int Pos = 0; // 'pseudo-position' of the element (with same value as VariableToProtect) in pVar
+int Pos = 0; // position of the element with the same value as VariableToProtect in pVar
 
 while( !GetAsyncKeyState( VK_SPACE ) )
 {
@@ -43,7 +43,7 @@ while( !GetAsyncKeyState( VK_SPACE ) )
 * basically, you can use it exactly like any other 'normal' variable
 
 ```c++
-int x = 0; // creates 'normal' - unprotected variable
+int x = 0; // creates unprotected variable
 pvar<int> y = 0; // creates protected variable
 ```
 
